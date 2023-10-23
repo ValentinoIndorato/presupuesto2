@@ -1,7 +1,7 @@
 import List from "./List"
 import Graphic from "./Graphic"
 import Amount from "./Amounts"
-import Button from "../button"
+import Botton from "../Botton"
 import PieCharts from "./PieChart"
 import { useState } from "react"
 
@@ -38,7 +38,7 @@ function CardGraphics() {
       
             <div className="cardGraphics-div">
                 <h2>Octubre</h2>
-                <Button />
+                <Botton />
             </div>
 
             <article className="cardGraphics-article">

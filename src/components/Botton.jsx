@@ -1,4 +1,4 @@
-function Button({p}){
+function Botton({p}){
 return(
     <>
     {p!==null ?
@@ -7,4 +7,4 @@ return(
     </>
 )
 }
-export default Button
+export default Botton
