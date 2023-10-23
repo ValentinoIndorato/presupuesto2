@@ -1,6 +1,7 @@
 .cardGraphics-div{
     display: flex;
     justify-content: space-between;
+    
     margin-bottom: 1rem;
     h2{
         font: $heading-fontsize-xxl;
@@ -11,10 +12,17 @@
     border: $card-border;
     border-radius: $card-borderRadius;
    padding: 1rem;
+   
     .cardGraphics-article-div{
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;    
+        flex-wrap: wrap;   
+        .tabs{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        
         .cardGraphics-article-div-section{
             width: 40%;
         }

@@ -1,13 +1,11 @@
 import React from 'react'
-
 import CardAmount from "../components/Card/CardAmounts"
 import CardGraphics from "../components/Card/CardGraphics"
-
 import Graphic from '../components/Card/Graphic'
-import RegisterForm from '../components/RegisterForm'
+
 const Dashboard = () => {
   return (
-    <article className='dashboard'>
+    <section className='dashboard'>
 
       <article className='dashboard-first-article'>
         <CardAmount egreso={true} />
@@ -19,16 +17,16 @@ const Dashboard = () => {
       
       <CardGraphics egreso={null} />
       </article>
-      <h2>Gastos anteriores</h2>
+      <h2>Meses anteriores</h2>
       <article  className='dashboard-third-article'>      
       <Graphic p={null}/>
       <Graphic p={null}/>
       <Graphic p={null}/>
       </article>
-      <RegisterForm/>
+      
 
 
-    </article>
+    </section>
   )
 }
 

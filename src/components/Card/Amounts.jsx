@@ -1,4 +1,5 @@
-function Amount({p}) {
+function Amount({p, datas}) {
+    console.log(datas)
     return (
         <>
         

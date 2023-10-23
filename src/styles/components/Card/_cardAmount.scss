@@ -3,18 +3,21 @@
     background-color: $white-color;
     border: $card-border;
     border-radius: $card-borderRadius;
-    width: 30%;
+ 
     padding: 1rem;
     
     p{
+      
         font: $heading-fontsize-s;
         font-weight: bold;
-        margin:2rem 1rem ;
+        margin:1% ;
         align-items: center;
+       
         span{
             font:$heading-fontsize-m; 
             color:$verde;
-           
+            font-size: clamp(0.5rem, 1.5rem, 5rem);
+
         }
         .CardAmount-Gasto{
             color:$red-egreso;

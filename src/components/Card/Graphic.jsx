@@ -1,7 +1,7 @@
 import { PieChart, Pie, Sector, Cell,ResponsiveContainer, Tooltip } from "recharts";
 
-function Graphic({p}){
-  
+function Graphic({p, datas}){
+
   const data = [
     { name: 'Group A', value: 400 },
     { name: 'Group B', value: 300 },
@@ -34,8 +34,9 @@ const PieChartWithPaddingAngles=(
   <Tooltip/> 
 </PieChart>
 </ResponsiveContainer>)
+
 return(
-    <>
+    <> 
      
       {p!==null ?  <>
         {/*<ul className="Graphic-ul">
@@ -44,6 +45,7 @@ return(
       </ul>  ES PARA MPSTRAR A DENIS COMO QUEDA DENTRO O SI LO CAMBIA*/}
     <div className="Graphic">{PieChartWithPaddingAngles}</div></>
     : 
+
     <div className="Graphic-date">
     <h3>Julio <span>Gasto: 60.000</span></h3>
     <div className="Graphic">{PieChartWithPaddingAngles}</div>
