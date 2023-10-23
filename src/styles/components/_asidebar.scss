@@ -1,0 +1,60 @@
+.asidebar-container {
+    width: 362px;
+    height: 100vh;
+    padding: 2rem 1rem;
+    border: 1px;
+    background-color: $white-color;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    nav {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        width: 100%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 1rem;
+            flex-direction: column;
+            width: 90%;
+
+            li {
+                min-height: 53px;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                background-color: unset;
+                position: relative;
+                right: 2rem;
+                padding: 0 2rem;
+                border-radius: 0px 50px 50px 0px;
+                transition: background 0.5s ease-in;
+                font: $heading-fontsize-xs;
+
+                &:hover {
+                    background-color: $light-violet;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: $black-color;
+            }
+
+            a.active li {
+                background-color: $light-violet;
+            }
+        }
+
+    }
+}

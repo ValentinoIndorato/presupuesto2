@@ -1,0 +1,14 @@
+.defaultLayout-main-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: #f4efff;
+
+    .defaultLayout-main-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+        padding-right: 4rem;
+    }
+}

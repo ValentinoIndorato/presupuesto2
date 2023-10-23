@@ -1,0 +1,85 @@
+/*Font Atkinson Hyperlegible*/
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*Font Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-title: 'Inter', sans-serif;
+$font-body: 'Atkinson Hyperlegible', sans-serif;
+
+/*Heading Font sizes**/
+$heading-fontsize-xxxl: normal normal 600 56px $font-title;
+$heading-fontsize-xxl: normal normal bold 48px $font-title;
+$heading-fontsize-xl: normal normal bold 40px $font-title;
+$heading-fontsize-l: normal normal 500 36px $font-title;
+$heading-fontsize-m: normal normal 500 32px $font-title;
+$heading-fontsize-s: normal normal 500 24px $font-title;
+$heading-fontsize-xs: normal normal 500 20px $font-title;
+
+
+/*Body Font sizes*/
+$body-fontsize-regular: normal normal 400 16px $font-body;
+
+/*Font Colors*/
+$heading-fontcolor: #263238;
+$body-fontcolor: #414750;
+$disabled-fontcolor: #565E69;
+$placeholder-fontcolor: #6B7480;
+$informative-fontcolor: #1C51A4;
+$success-fontcolor: #1E4620;
+$warning-fontcolor: #82620F;
+$error-fontcolor: #AB2816;
+
+/*Line or fill colors*/
+$informative-fillcolor: #1893D5;
+$success-fillcolor: #418944;
+$warning-fillcolor: #E8B93F;
+$error-fillcolor: #D74242;
+
+
+$dark-violet: #5706AC; //Texto en tarjeta de usuario
+$middle-violet: #7E07FA;
+$middle1-violet: #7E07FA;
+$light-violet:#C5A7FF;
+$white-color:#FFFFFF;
+$black-color: #14181F;
+$gray-border-color:#C0C0C0;
+$gray-placeholder-color: #4F4F4F;
+
+//Colores traslucidos
+$dark-violetRGBA:#5706ac33;
+$celeste-bajoRGBA:#0d99ff33;
+$rojo-bajoRGBA: #f2482233;
+$verdeRGBA:#14ae5c33;
+$amarillo-bajoRGBA:#ffcd2933;
+$amarillo-medioRGBA:#ffa62933;
+$amarillo-altoRGBA:#ff950033;
+
+$violeta-bajo:#F1EDF6;
+$violeta-medio1:#C5A7FF; //300
+$violeta-medio2:#7E07FA;//700
+$violeta-alto: #5706ac;//900
+$color-border: #C0C0C0;
+$color-body: $violeta-bajo;//ver si sirve esta variable
+$card-backgroundColor: $white-color;//ver si sirve esta variable
+$celeste-bajo: #0D99FF;
+$celeste-medio: #3A7DE6;
+$rojo-bajo:#F24822;//redondel
+$rojo-medio:#F93B3B;//numeros
+$red-egreso: #D53939;
+$verde:#14AE5C;
+$amarillo-bajo:#FFCD29;
+$amarillo-medio:#FFA629;
+$amarillo-alto:#FF9500;
+/*Algunos elementos*/
+//card
+$card-border: 1px solid $gray-border-color;
+$card-borderRadius:10px;
+//button
+$background-buttonDefault: linear-gradient(270deg, #5706AC 2.75%, #8047BC 100%);
+$background-buttonDisable: #AE88D6;
+$background-buttonHover:linear-gradient(271.73deg, #7013D2 1.47%, #9459D3 81.63%);
+$background-buttonActive: $violeta-alto;//Preguntar Denis si puedo usar medio2
+$color-inputFocus: $dark-violet ;// Preguntar Denis apretando tab
+
+
