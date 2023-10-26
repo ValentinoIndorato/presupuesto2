@@ -8,20 +8,15 @@
     }
 } 
 .cardGraphics-article{
-    background-color: $white-color;
-    border: $card-border;
-    border-radius: $card-borderRadius;
-   padding: 1rem;
-   
     .cardGraphics-article-div{
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;   
-        .tabs{
-            width: 100%;
+        flex-direction: column;
+        .graphicsAndList{
             display: flex;
-            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
         }
+        
         
         .cardGraphics-article-div-section{
             width: 40%;
