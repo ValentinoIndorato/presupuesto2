@@ -29,6 +29,12 @@
         border-color: $blue-income;
         color: $white-color;
       }
+      &.blue {
+        background: $blue-income;
+        border-color: $blue-income;
+        color: $white-color;
+       
+      } 
     }
     &:last-child {
       border-top-right-radius: $card-borderRadius;
@@ -49,7 +55,14 @@
         background: $red-egreso;
         border-color: $red-egreso;
         color: $white-color;
+
       }
+      &.red{ 
+        background: $red-egreso;
+        border-color: $red-egreso;
+        color: $white-color;        
+      
+        }
     }
   }
 }

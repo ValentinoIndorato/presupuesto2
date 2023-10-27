@@ -11,9 +11,9 @@
        width: 20%;
        align-items: center;
        justify-content: center;
-        #Button {
+        button{
           font:  normal normal 600 1rem $font-title;
-          background: #c8c8c833;
+          background-color: #c8c8c833;
           color:$body-black;
           border: $card-border;
           width: 100%;
@@ -35,12 +35,24 @@
           &:first-child{
             border-top-left-radius:$card-borderRadius;
             border-bottom-left-radius:$card-borderRadius;
-           
+            &.dateDay{
+              background: $light-violet;
+              border-color: $light1-violet;
+            } 
           }
-           &:last-child {
+          &.dateWeek{
+            background: $light-violet;
+            border-color: $light1-violet;
+          } 
+          &:last-child {
             border-top-right-radius: $card-borderRadius;
             border-bottom-right-radius: $card-borderRadius;
+            &.dateMount{
+              background: $light-violet;
+              border-color: $light1-violet;
+            } 
           }
+         
         }
       }
 }

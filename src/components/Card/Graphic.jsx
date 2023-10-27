@@ -1,7 +1,7 @@
 import { PieChart, Pie, Sector, Cell,ResponsiveContainer, Tooltip } from "recharts";
 import BottonGroupGraphicAmount from "./BottonGroupGraphicAmount";
 
-function Graphic({p, datas}){
+function Graphic({p, datas, className}){
 console.log(datas[0])
   const data = [
     { name: 'Group A', value: 400 },
@@ -63,7 +63,7 @@ return(
     <h3>Julio <button>Ver todo</button></h3>
     
     <div className="Graphic">{PieChartWithPaddingAngles}</div>
-    <BottonGroupGraphicAmount/>
+    <BottonGroupGraphicAmount className={className} />
     </div>
     }
     

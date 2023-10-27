@@ -34,7 +34,7 @@
 
                     &:first-child{
                       border: 10px solid rgba(255, 0, 0, 0);
-                     
+                      
                       &:default {
                         background: $background-buttonDisable;//revisar
                       }
@@ -49,9 +49,11 @@
                         color: $blue-income;
                         border-color: rgba(255, 0, 0, 0)  rgba(255, 0, 0, 0) $blue-income rgba(255, 2, 2, 0)  ;
                       }
-                      &.active {
+                      &.blue {
+                        color: $blue-income;
                         border-color: rgba(255, 0, 0, 0)  rgba(255, 0, 0, 0) $blue-income rgba(255, 2, 2, 0)  ;
-                      } //preguntar Guido
+                      } 
+                      
                     }
                     &:last-child {
                       border: 10px solid rgba(255, 0, 0, 0) ;
@@ -69,14 +71,19 @@
                       &:focus {
                         color: $red-egreso;
                         border-color: rgba(255, 0, 0, 0)  rgba(255, 0, 0, 0) $red-egreso rgba(255, 2, 2, 0)  ;
-                      }
-                      &.active {
-                        border-color: rgba(255, 0, 0, 0)  rgba(255, 0, 0, 0) $red-egreso rgba(255, 2, 2, 0)  ;
-                      } //preguntar Guido
+                      }                      
+                      &.red{ 
+                        color: $red-egreso;
+                        
+                        border-color: rgba(255, 0, 0, 0)  rgba(255, 0, 0, 0) $red-egreso rgba(255, 2, 2, 0)  ;   
+                        }
+                
 
-                    }
-                    
+                     }
+                     
                 }
+               
+                 
             }
         }
         

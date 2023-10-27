@@ -7,10 +7,10 @@ function Modal({closeModal}){
                     <h3>Nuevo</h3>
                     <button onClick={()=>{closeModal(false)}}>X</button>
                     </div>
-                    <div className="modalTabs">
+                    <section className="modalTabs">
                         <button >              Ingreso            </button>
                         <button  >              Egreso            </button>
-                    </div>
+                    </section>
                     <form action="" className="modalForm">
                         <input type="datetime-local" placeholder="26/10/2023 15:42 " />
 
@@ -36,9 +36,10 @@ function Modal({closeModal}){
                         <input type="text" placeholder="Monto"/>
                         <input type="text" placeholder="Notas"/>
                     </form>   
-                    <div>              
+                    <section className="cancel">              
                     <button onClick={()=>{closeModal(false)}}>Cancel</button>
-                    <button>Confirmar</button></div>   
+                    <button>Confirmar</button>
+                    </section>   
                     
                 </div>
            

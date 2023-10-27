@@ -15,12 +15,22 @@ const Dashboard = () => {
     },
   ];
   const [amount, setAmount] = useState(montos[0].income);
+  const [changeClass, setChangeClass]=useState("blue")
+
   function income() {
     setAmount(montos[0].income);
+    
+   
+    setChangeClass("blue")
+    
   }
 
   function egress() {
     setAmount(montos[0].egress);
+
+      setChangeClass("red")
+    
+    
   }
 
   return (
@@ -46,6 +56,7 @@ const Dashboard = () => {
               onClick={() => {
                 income();
               }}
+              className={"blue"==changeClass &&"blue"}
             >
               Ingreso{" "}
               {amount.map((p) => {
@@ -55,7 +66,8 @@ const Dashboard = () => {
             <button
               onClick={() => {
                 egress();
-              }}
+              } }
+              className={"red"==changeClass &&"red" }
             >
               Egreso
             </button>
@@ -67,9 +79,9 @@ const Dashboard = () => {
 
       <h2>Meses anteriores</h2>
       <article className="dashboard-third-article">
-        <Graphic p={null}datas={amount}/>
-        <Graphic p={null}datas={amount}/>
-        <Graphic p={null}datas={amount}/>
+        <Graphic p={null}datas={amount} className={changeClass}/>
+        <Graphic p={null}datas={amount} className={changeClass}/>
+        <Graphic p={null}datas={amount} className={changeClass}/>
       </article>
     </section>
   );
