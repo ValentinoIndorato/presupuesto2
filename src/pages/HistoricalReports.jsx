@@ -6,6 +6,7 @@ const HistoricalReports = () => {
       <Helmet>
       <title>Reportes historicos | Presupuesto claro</title>
       </Helmet>
+      <div>Reportes historicos </div>
 
    
 
