@@ -3,7 +3,7 @@ import Graphic from "./Graphic"
 import Amount from "./Amounts"
 
 
-function CardGraphics({amount}) {
+function CardGraphics({amount,delet }) {
     console.log(amount[4])
     
    
@@ -17,11 +17,11 @@ function CardGraphics({amount}) {
                     <div className="graphicsAndList">
                     <Graphic amount={amount} />
                     <section className="cardGraphics-article-div-section">
-                        <Amount amount={amount}/>                      
+                        <Amount amount={amount}  />                      
                     </section>
                     </div>
                 </div>
-                <List amount={amount}  />
+                <List amount={amount} delet={delet}  />
             </article>
 
         </>
