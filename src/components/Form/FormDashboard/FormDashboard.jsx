@@ -72,10 +72,11 @@ console.log(changeClass)
                     <SvgClose />
                 </span>
             </header>
-            <ButtonIncomeEgress reset={resetField} changeClass={changeClass} income={ income} egress={ egress} formTrue={true} />        
+            <ButtonIncomeEgress reset={reset} changeClass={changeClass} income={ income} egress={ egress} formTrue={true} />        
 
 {changeClass=== true?
                  <>
+                 
                  <section className='formDashboard-section'>
  
                  <CustomInput
@@ -177,7 +178,7 @@ console.log(changeClass)
                     
                     <CustomInput
                     register={register}
-                    name={"friends_egress"}//VER EGRESO E INGRESO
+                    name={"shared_egress"}//VER EGRESO E INGRESO
                     placeholder={"Agregar persona"}
                     errors={errors}
                     setValue={setValue}
@@ -236,9 +237,14 @@ console.log(changeClass)
                 <button disabled={!isValid } type="submit">Confirmar</button>
                  
             </section>
+           
         </form>
     )
 }
 
 export default FormDashboard
-
+{/*<code>
+<pre>
+    {JSON.stringify(watch(),null,2)}
+</pre>
+</code>*/}

@@ -4,7 +4,7 @@ function ButtonIncomeEgress({ amount,changeClass, income, egress, formTrue, rese
         <div className="tabs">
             <button
               onClick={() => {
-                income();reset() 
+                income(formTrue &&reset())
               }}
               className={`${changeClass ? "blue" : ""} ${formTrue ? "formDashboard-modalTabs" : ""} `}
          
@@ -14,7 +14,7 @@ function ButtonIncomeEgress({ amount,changeClass, income, egress, formTrue, rese
             </button>
             <button
               onClick={() => {
-                egress();reset() 
+                egress(formTrue && reset())
               } }
               className={`${!changeClass ? "red": ""} ${formTrue ? "formDashboard-modalTabs" : ""}  `}
             >
